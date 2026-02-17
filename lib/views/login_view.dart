@@ -108,7 +108,7 @@ class _LoginViewState extends State<LoginView> {
                                       ),
                                     ],
                                   ),
-                                  height: 315,
+                                  height: 425,
                                   width: double.infinity,
                                   child: Padding(
                                     padding: const EdgeInsets.all(8.0),

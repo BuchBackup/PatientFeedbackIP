@@ -801,7 +801,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
                                                                         BorderRadius.circular(
                                                                             30)),
                                                                 height: 40,
-                                                                width: 140,
+                                                                width: 180,
                                                                 child:
                                                                     const Center(
                                                                   child: Text(

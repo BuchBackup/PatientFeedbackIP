@@ -140,7 +140,7 @@ class _AdmittedPatientViewState extends State<AdmittedPatientView> {
                       Container(
                         color: Colors.white,
                         height: 65,
-                        width: 150,
+                        width: 130,
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Image.asset(
@@ -154,7 +154,7 @@ class _AdmittedPatientViewState extends State<AdmittedPatientView> {
                         padding: EdgeInsets.only(right: 0.0),
                         child: Text(
                           'Patient Feedback Form',
-                          style: kBodyBlackBold18,
+                          style: kBodyBlackBold14,
                         ),
                       ),
                       // const Text(
@@ -385,13 +385,26 @@ class _AdmittedPatientViewState extends State<AdmittedPatientView> {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
                                       children: [
-                                        Row(
-                                          children: [
-                                            Text(
-                                              'PIN: ${patient.pin}\nDoctor: ${patient.doctor}\nDept: ${patient.deptName}',
-                                              style: kBodyWhiteBold12,
-                                            ),
-                                          ],
+                                        Text(
+                                          'PIN: ${patient.pin}',
+                                          style: kBodyWhiteBold12,
+                                        ),
+                                        SizedBox(
+                                          width: 270,
+                                          child: Text(
+                                            'Doctor: ${patient.doctor}',
+                                            style: kBodyWhiteBold12,
+                                            overflow: TextOverflow.ellipsis,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 270,
+                                          height: 20,
+                                          child: Text(
+                                            'Dept: ${patient.deptName}',
+                                            style: kBodyWhiteBold12,
+                                            overflow: TextOverflow.ellipsis,
+                                          ),
                                         ),
                                         Container(
                                           decoration: BoxDecoration(
